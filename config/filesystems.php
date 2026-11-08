@@ -60,6 +60,19 @@ return [
             'report' => false,
         ],
 
+        'ged_external' => [
+            'driver' => 'local',
+
+            'root' => env(
+                'GED_STORAGE_PATH',
+                storage_path('app/private/ged-documents')
+            ),
+
+            'throw' => true,
+
+            'report' => true,
+        ],
+
     ],
 
     /*
